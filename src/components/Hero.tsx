@@ -36,12 +36,12 @@ const Hero = () => {
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 animate-fade-in delay-500">
           <div className="text-center">
-            <div className="text-3xl font-mono text-blue-400 mb-2">5+</div>
+            <div className="text-3xl font-mono text-blue-400 mb-2">3+</div>
             <div className="text-gray-400">Years Experience</div>
           </div>
           <div className="hidden md:block w-px h-12 bg-gray-600"></div>
           <div className="text-center">
-            <div className="text-3xl font-mono text-emerald-400 mb-2">50+</div>
+            <div className="text-3xl font-mono text-emerald-400 mb-2">15+</div>
             <div className="text-gray-400">APIs Built</div>
           </div>
           <div className="hidden md:block w-px h-12 bg-gray-600"></div>

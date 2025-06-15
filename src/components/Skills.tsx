@@ -6,12 +6,12 @@ const Skills = () => {
     {
       title: "Languages & Frameworks",
       icon: <Code className="w-6 h-6" />,
-      skills: ["Python", "Node.js", "Go", "Java", "Express.js", "FastAPI", "Spring Boot", "Django"]
+      skills: ["Node.js", "Express.js", "PHP", "Laravel"]
     },
     {
       title: "Databases & Storage",
       icon: <Database className="w-6 h-6" />,
-      skills: ["PostgreSQL", "MongoDB", "Redis", "Elasticsearch", "MySQL", "DynamoDB"]
+      skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL"]
     },
     {
       title: "Infrastructure & DevOps",

@@ -7,23 +7,23 @@ const ApiShowcase = () => {
   
   const apiDemos = [
     {
-      title: "User Authentication API",
-      description: "JWT-based authentication with refresh tokens",
+      title: "StreetGotTalent API",
+      description: "API to manage contestant registration and management, voting and payment integration",
       endpoint: "POST /api/auth/login",
       requestBody: `{
-  "email": "user@example.com",
-  "password": "securePassword123"
-}`,
-      responseBody: `{
-  "success": true,
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-  "refreshToken": "refresh_token_here",
-  "user": {
-    "id": "user_123",
-    "email": "user@example.com",
-    "role": "user"
-  }
-}`,
+      "email": "user@example.com",
+      "password": "securePassword123"
+    }`,
+          responseBody: `{
+      "success": true,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "refreshToken": "refresh_token_here",
+      "user": {
+        "id": "user_123",
+        "email": "user@example.com",
+        "role": "user"
+      }
+    }`,
       techStack: ["Node.js", "Express", "JWT", "bcrypt"],
       curlCommand: `curl -X POST https://api.chimdyke.dev/auth/login \\
   -H "Content-Type: application/json" \\

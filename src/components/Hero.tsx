@@ -1,5 +1,5 @@
 
-import { Code, Database, Server, Api } from "lucide-react";
+import { Code, Database, Server, Globe } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -18,7 +18,7 @@ const Hero = () => {
         <Code size={50} />
       </div>
       <div className="absolute top-60 right-20 opacity-10 animate-pulse delay-3000">
-        <Api size={45} />
+        <Globe size={45} />
       </div>
       
       <div className="relative z-10 text-center max-w-4xl mx-auto">

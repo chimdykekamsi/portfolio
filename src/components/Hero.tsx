@@ -1,5 +1,5 @@
 
-import { Code, Database, Server } from "lucide-react";
+import { Code, Database, Server, Api } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -17,14 +17,20 @@ const Hero = () => {
       <div className="absolute bottom-32 left-32 opacity-10 animate-pulse delay-2000">
         <Code size={50} />
       </div>
+      <div className="absolute top-60 right-20 opacity-10 animate-pulse delay-3000">
+        <Api size={45} />
+      </div>
       
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent animate-fade-in">
-            Backend Engineer
+            Chimdike K. Anagboso
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in delay-300">
-            Building scalable systems and robust architectures
+          <p className="text-2xl md:text-3xl text-gray-300 mb-4 animate-fade-in delay-200">
+            Backend Engineer
+          </p>
+          <p className="text-lg md:text-xl text-gray-400 mb-8 animate-fade-in delay-300">
+            Building scalable APIs and robust backend systems with Node.js & Express
           </p>
         </div>
         
@@ -36,7 +42,7 @@ const Hero = () => {
           <div className="hidden md:block w-px h-12 bg-gray-600"></div>
           <div className="text-center">
             <div className="text-3xl font-mono text-emerald-400 mb-2">50+</div>
-            <div className="text-gray-400">Projects Deployed</div>
+            <div className="text-gray-400">APIs Built</div>
           </div>
           <div className="hidden md:block w-px h-12 bg-gray-600"></div>
           <div className="text-center">
@@ -47,10 +53,10 @@ const Hero = () => {
         
         <div className="mt-12 animate-fade-in delay-700">
           <a 
-            href="#skills" 
+            href="#projects" 
             className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-emerald-700 transition-all duration-300 hover:scale-105"
           >
-            View My Work
+            Explore My APIs
           </a>
         </div>
       </div>

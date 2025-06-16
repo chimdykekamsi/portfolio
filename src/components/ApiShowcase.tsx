@@ -278,7 +278,7 @@ const ApiShowcase = () => {
           </div>
 
           {/* API Details */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-2 space-y-6 max-h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
             {/* Project Information Card */}
             <div className="bg-gray-900/50 rounded-xl border border-gray-700 p-6 space-y-8">
               {/* Title and Description */}

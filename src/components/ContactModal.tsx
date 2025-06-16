@@ -26,7 +26,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
     e.preventDefault();
     
     // Create mailto link with form data
-    const mailtoLink = `mailto:chimdike@example.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:ckamsi04@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     )}`;
     

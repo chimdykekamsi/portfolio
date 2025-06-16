@@ -3,87 +3,53 @@ import { useState } from "react";
 import { ExternalLink, Clock, Tag } from "lucide-react";
 
 const CaseStudies = () => {
-  const [selectedCategory, setSelectedCategory] = useState("all");
   
   const caseStudies = [
     {
       id: 1,
-      title: "Building a Scalable Payment Processing System",
-      summary: "How I architected a payment system handling 10,000+ transactions daily with 99.9% uptime",
-      readTime: "8 min read",
-      publishedDate: "2024-01-15",
-      tags: ["payment-integration", "stripe", "webhooks", "scaling"],
-      category: "fintech",
-      mediumLink: "https://medium.com/@chimdyke/building-scalable-payment-system",
-      projectLink: "#",
+      title: "Why I Had to Install @next/swc-win32-x64-msvc",
+      summary: "Case Study: why your next app throws 'failed to load swc binary erro' and how to fix it",
+      readTime: "2 min read",
+      publishedDate: "April 8, 2025",
+      tags: ["NexJs", "Erro Handling", "@next/swc-win32-x64-msvc", "Case Study"],
+      category: "experience",
+      mediumLink: "https://medium.com/@ckamsi04/case-study-why-your-next-app-throws-failed-to-load-swc-binary-erro-and-how-to-fix-it-3b1525c1d017",
+      projectLink: "#", 
       thumbnail: "/api/placeholder/400/250",
       challenges: [
-        "Handling high transaction volume",
-        "Implementing secure webhook processing",
-        "Managing payment failures gracefully"
+        "Failed to load SWC binary error",
+        "Compatibility issues with Windows environment",
+        "Understanding the need for specific SWC binaries"
       ],
       solutions: [
-        "Implemented queue-based processing with Redis",
-        "Added idempotency keys for duplicate prevention",
-        "Built comprehensive retry mechanism"
+        "Installed @next/swc-win32-x64-msvc package",
+        "Ensured correct version matching with Next.js",
+        "Configured environment for optimal performance"
       ]
     },
     {
       id: 2,
-      title: "Microservices Authentication: JWT vs Session-Based",
-      summary: "Deep dive into authentication strategies for distributed systems and their trade-offs",
-      readTime: "12 min read",
-      publishedDate: "2024-01-08",
-      tags: ["authentication", "jwt", "microservices", "security"],
-      category: "architecture",
-      mediumLink: "https://medium.com/@chimdyke/microservices-authentication",
-      projectLink: "#",
-      thumbnail: "/api/placeholder/400/250",
+      title: "When ‘Just One More Tweak’ Turns Into a Whole New Project",
+      summary: "How I Learned the Hard Way to Set Boundaries in Freelancing",
+      readTime: "2 min read",
+      publishedDate: "January 7, 2025",
+      tags: ["Freelancing", "Project Management", "Client Relations", "Boundaries"],
+      category: "experience",
+      mediumLink: "https://medium.com/@ckamsi04/when-just-one-more-tweak-turns-into-a-whole-new-project-4392bc7a7a19",
+      projectLink: "#", 
+      thumbnail: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*nRSR7mvssKtnVbDtgX8o3w.jpeg",
       challenges: [
-        "Cross-service user verification",
-        "Token refresh management",
-        "Security vs performance balance"
+        "Clients requesting endless tweaks",
+        "Balancing client satisfaction with project scope",
+        "Learning to say no effectively"
       ],
       solutions: [
-        "Hybrid approach with short-lived JWTs",
-        "Centralized auth service with caching",
-        "Implemented refresh token rotation"
+        "Set clear project boundaries upfront",
+        "Communicated effectively with clients",
+        "Learned to prioritize my time and energy"
       ]
     },
-    {
-      id: 3,
-      title: "Real-time Chat System with Socket.io and Redis",
-      summary: "Building a production-ready chat system supporting 1000+ concurrent users",
-      readTime: "10 min read",
-      publishedDate: "2023-12-20",
-      tags: ["websockets", "redis", "real-time", "scaling"],
-      category: "real-time",
-      mediumLink: "https://medium.com/@chimdyke/realtime-chat-socketio-redis",
-      projectLink: "#",
-      thumbnail: "/api/placeholder/400/250",
-      challenges: [
-        "Managing connection state across servers",
-        "Message persistence and delivery",
-        "Room-based message broadcasting"
-      ],
-      solutions: [
-        "Redis adapter for horizontal scaling",
-        "Message queue for offline users",
-        "Optimized room subscription logic"
-      ]
-    }
   ];
-
-  const categories = [
-    { id: "all", label: "All Studies" },
-    { id: "fintech", label: "FinTech" },
-    { id: "architecture", label: "Architecture" },
-    { id: "real-time", label: "Real-time" }
-  ];
-
-  const filteredStudies = selectedCategory === "all" 
-    ? caseStudies 
-    : caseStudies.filter(study => study.category === selectedCategory);
 
   return (
     <section className="py-20 px-6">
@@ -95,31 +61,14 @@ const CaseStudies = () => {
           </p>
         </div>
 
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-2 rounded-full transition-all duration-300 ${
-                selectedCategory === category.id
-                  ? 'bg-gradient-to-r from-blue-600 to-emerald-600 text-white'
-                  : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-              }`}
-            >
-              {category.label}
-            </button>
-          ))}
-        </div>
-
         {/* Case Studies Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredStudies.map((study) => (
+          {caseStudies.map((study) => (
             <div key={study.id} className="bg-gray-900/50 rounded-xl border border-gray-700 overflow-hidden hover:border-gray-600 transition-all duration-300 hover:scale-105">
               {/* Thumbnail */}
-              <div className="h-48 bg-gradient-to-br from-blue-600/20 to-emerald-600/20 flex items-center justify-center">
+              {/* <div className="h-48 bg-gradient-to-br from-blue-600/20 to-emerald-600/20 flex items-center justify-center">
                 <div className="text-4xl">📊</div>
-              </div>
+              </div> */}
               
               <div className="p-6">
                 {/* Meta info */}
@@ -182,13 +131,23 @@ const CaseStudies = () => {
                   >
                     Read on Medium
                     <ExternalLink className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={study.projectLink}
-                    className="px-4 py-2 bg-gray-800 text-gray-300 rounded-lg text-sm font-medium hover:bg-gray-700 transition-colors"
-                  >
-                    View Project
-                  </a>
+                  </a>                  {study.projectLink !== "#" ? (
+                    <a
+                      href={study.projectLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-gray-800 text-gray-300 rounded-lg text-sm font-medium hover:bg-gray-700 transition-colors"
+                    >
+                      View Project
+                    </a>
+                  ) : (
+                    <button
+                      disabled
+                      className="px-4 py-2 bg-gray-800/50 text-gray-500 rounded-lg text-sm font-medium cursor-not-allowed"
+                    >
+                      View Project
+                    </button>
+                  )}
                 </div>
               </div>
             </div>

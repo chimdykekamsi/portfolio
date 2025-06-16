@@ -14,22 +14,21 @@ const Header = () => {
         
         <div className="flex items-center gap-4">
           <a 
-            href="https://github.com/chimdyke" 
+            href="https://github.com/chimdykekamsi" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"
           >
             <Github size={20} />
-          </a>
-          
-          <Button 
-            variant="outline" 
-            size="sm"
-            className="border-gray-600 text-gray-300 hover:bg-gray-800"
+          </a>          <a
+            href="https://docs.google.com/document/d/1WdIN2owZ0rQ-VsIoWxcHnmMFLZsG71RgCFspsmlEMLs/edit?usp=sharing" // Replace with your actual resume file path
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm border border-gray-600 text-white hover:bg-gray-800 hover:text-white font-medium shadow-lg bg-gray-800/50 backdrop-blur-sm rounded-md transition-colors"
           >
-            <FileText size={16} className="mr-2" />
+            <FileText size={16} />
             View Resume
-          </Button>
+          </a>
         </div>
       </div>
     </header>

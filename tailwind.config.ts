@@ -92,5 +92,11 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		// add tailwindcss scrollbar plugin
+		require("tailwind-scrollbar")({
+			safelist: ["scrollbar-thin", "scrollbar-thumb-gray-600", "scrollbar-track-gray-800"]
+		}),
+	],
 } satisfies Config;

@@ -30,21 +30,20 @@ const Hero = () => {
             Backend Engineer
           </p>
           <p className="text-lg md:text-xl text-gray-400 mb-8 animate-fade-in delay-300">
-            Building scalable APIs and robust backend systems with Node.js & Express
-          </p>
+            Specializing in designing scalable APIs and resilient backend architectures using JavaScript, TypeScript, and modern Node.js frameworks. </p>
         </div>
         
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 animate-fade-in delay-500">
+        <div className="flex flex-row items-center justify-center gap-8 animate-fade-in delay-500">
           <div className="text-center">
             <div className="text-3xl font-mono text-blue-400 mb-2">3+</div>
             <div className="text-gray-400">Years Experience</div>
           </div>
-          <div className="hidden md:block w-px h-12 bg-gray-600"></div>
+          <div className="block w-px h-12 bg-gray-600"></div>
           <div className="text-center">
-            <div className="text-3xl font-mono text-emerald-400 mb-2">15+</div>
+            <div className="text-3xl font-mono text-emerald-400 mb-2">5+</div>
             <div className="text-gray-400">APIs Built</div>
           </div>
-          <div className="hidden md:block w-px h-12 bg-gray-600"></div>
+          <div className="block w-px h-12 bg-gray-600"></div>
           <div className="text-center">
             <div className="text-3xl font-mono text-purple-400 mb-2">99.9%</div>
             <div className="text-gray-400">Uptime Achieved</div>
@@ -57,6 +56,14 @@ const Hero = () => {
             className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-emerald-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-emerald-700 transition-all duration-300 hover:scale-105"
           >
             Explore My APIs
+          </a>
+        </div>
+        <div className="mt-2 animate-fade-in delay-700">
+          <a 
+            href="#skills" 
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm border border-gray-600 text-white hover:bg-gray-800 hover:text-white font-medium shadow-lg bg-gray-800/50 backdrop-blur-sm rounded-md transition-colors"
+          >
+            My Skillset
           </a>
         </div>
       </div>

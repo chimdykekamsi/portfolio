@@ -1,37 +1,49 @@
 
-const Experience = () => {
-  const experiences = [
+const Experience = () => {  const experiences = [
     {
-      title: "Senior Backend Engineer",
-      company: "TechCorp Solutions",
-      period: "2022 - Present",
-      description: "Lead backend development for high-scale fintech applications serving 1M+ users",
+      title: "Freelance Backend Developer",
+      company: "Self-Employed",
+      period: "2023 - Present",
+      description: "Delivering custom backend solutions for various clients across different industries",
       achievements: [
-        "Designed microservices architecture reducing system latency by 40%",
-        "Implemented automated testing pipeline improving deployment confidence",
-        "Mentored 5+ junior developers on backend best practices"
+        "Developed and maintained multiple production APIs and backend systems",
+        "Managed client relationships and project deliverables independently",
+        "Successfully completed projects in payment systems, content management, and utility services",
+        "Demonstrated ability to adapt to different tech stacks based on client requirements"
       ]
     },
     {
-      title: "Backend Engineer",
-      company: "CloudTech Innovations",
-      period: "2020 - 2022",
-      description: "Developed scalable APIs and data processing systems for e-commerce platform",
+      title: "Backend Engineering Intern",
+      company: "HNG Internship (Cohort 13)",
+      period: "May 2025 - Present",
+      description: "Working remotely on challenging backend projects with diverse international teams",
       achievements: [
-        "Built distributed caching system handling 100K+ concurrent users",
-        "Optimized database queries reducing response times by 60%",
-        "Implemented event-driven architecture for real-time notifications"
+        "Participating in intensive backend development training and real-world projects",
+        "Collaborating with cross-functional teams on enterprise-level applications",
+        "Learning and implementing industry best practices in backend development"
       ]
     },
     {
-      title: "Junior Backend Developer",
-      company: "StartupHub",
-      period: "2019 - 2020",
-      description: "Started career building REST APIs and learning scalable system design",
+      title: "Backend Engineering Student",
+      company: "ZartTalent Advanced Backend Engineering Bootcamp",
+      period: "Nov 2024 - Mar 2025",
+      description: "Intensive backend engineering training focusing on modern technologies and best practices",
       achievements: [
-        "Developed RESTful APIs serving mobile and web applications",
-        "Implemented user authentication and authorization systems",
-        "Participated in agile development and code review processes"
+        "Built a comprehensive e-commerce API as final project using TypeScript and MongoDB",
+        "Implemented advanced features including product filtering, cart management, and secure payments",
+        "Learned and applied principles of clean architecture and test-driven development"
+      ]
+    },
+    {
+      title: "Team Lead",
+      company: "Internal Hackathon Project",
+      period: "2021",
+      description: "Led development of a Quiz Application using PHP & SQL",
+      achievements: [
+        "Led a team of 7 developers to win the 2021 internal hackathon",
+        "Designed and implemented a responsive quiz system with real-time scoring",
+        "Managed team dynamics and task distribution to meet tight deadlines",
+        "Successfully delivered a fully functional quiz platform within the hackathon timeframe"
       ]
     }
   ];

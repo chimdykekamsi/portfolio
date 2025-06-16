@@ -124,7 +124,7 @@ const ApiShowcase = () => {
         "Advanced search functionality",
         "Swagger documentation"
       ],
-      techStack: ["Node.js", "TypeScript", "MongoDB", "Typegoose", "Swagger"],
+      techStack: ["Node.js", "TypeScript", "MongoDB", "Typegoose", "Swagger", "AWS S3 Bucket"],
       metrics: ["1000+ products", "99.9% uptime", "50ms avg response"],
       architecture: {
         icon: <Database className="w-5 h-5" />,

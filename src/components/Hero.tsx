@@ -22,15 +22,15 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 text-center max-w-4xl mx-auto">
-        <div className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent animate-fade-in">
-            Chimdike K. Anagboso
+        <div className="mb-8">          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent animate-fade-in">
+            Chimdyke K. Anagboso
           </h1>
           <p className="text-2xl md:text-3xl text-gray-300 mb-4 animate-fade-in delay-200">
             Backend Engineer
           </p>
-          <p className="text-lg md:text-xl text-gray-400 mb-8 animate-fade-in delay-300">
-            Specializing in designing scalable APIs and resilient backend architectures using JavaScript, TypeScript, and modern Node.js frameworks. </p>
+          <p className="text-lg md:text-xl text-gray-400 mb-8 leading-relaxed animate-fade-in delay-300">
+            Expert in Node.js, TypeScript, and Cloud Architecture, specializing in building scalable APIs, resilient backend systems, and modern full-stack applications. Crafting high-performance solutions with a focus on code quality and system reliability.
+          </p>
         </div>
         
         <div className="flex flex-row items-center justify-center gap-8 animate-fade-in delay-500">

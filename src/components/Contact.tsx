@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Github, Linkedin, Mail, Phone, Instagram } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Instagram, Facebook } from "lucide-react";
 import ContactModal from "./ContactModal";
 
 const Contact = () => {
@@ -12,8 +12,7 @@ const Contact = () => {
         <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
           Looking for a backend engineer to architect scalable systems? 
           Let's discuss how I can help bring your vision to life.
-        </p>
-          <div className="grid md:grid-cols-5 lg:grid-cols-5 gap-2 mb-12">
+        </p>          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
           <a 
             href="mailto:ckamsi04@gmail.com"
             className="p-6 bg-gray-900/50 rounded-xl border border-gray-700 hover:bg-gray-800/50 transition-all duration-300 hover:scale-105 group"
@@ -73,8 +72,20 @@ const Contact = () => {
             <div className="text-2xl mb-3">
               <Instagram className="w-8 h-8 mx-auto text-pink-400 group-hover:text-pink-300" />
             </div>
-            <h3 className="text-white font-semibold mb-2">Instagram</h3>
-            <p className="text-gray-400 font-mono text-sm group-hover:text-pink-400">@ckamsi04</p>
+            <h3 className="text-white font-semibold mb-2">Instagram</h3>            <p className="text-gray-400 font-mono text-sm group-hover:text-pink-400">@ckamsi04</p>
+          </a>
+
+          <a 
+            href="https://facebook.com/ckamsi04"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-6 bg-gray-900/50 rounded-xl border border-gray-700 hover:bg-gray-800/50 transition-all duration-300 hover:scale-105 group"
+          >
+            <div className="text-2xl mb-3">
+              <Facebook className="w-8 h-8 mx-auto text-blue-500 group-hover:text-blue-400" />
+            </div>
+            <h3 className="text-white font-semibold mb-2">Facebook</h3>
+            <p className="text-gray-400 font-mono text-sm group-hover:text-blue-500">@chimdykekamsi</p>
           </a>
         </div>
         
